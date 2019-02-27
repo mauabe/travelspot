@@ -7,12 +7,7 @@
       rel="stylesheet"
     />
     <!--Import materialize.css-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
 
     <link
@@ -29,14 +24,32 @@
 
   <body>
     <div class="navbar-fixed">
-      <nav class="blue-grey">
+      <nav class="deep-orange ">
         <div class="container">
           <div class="nav-wrapper">
-            <a class="a brand-logo" href="#home"> TravelSpot </a>
+            <a class="brand-logo" href="#home"> TravelSpot </a>
+            <a href="#" data-activates='mobile-nav' class='button-callapse'>
+              <i class="material-icons">menu</i>          
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href='#home'>HOME</a></li>
+              <li><a href='#search'>SEARCH</a></li>
+              <li><a href='#popular'>POPULAR PLACES</a></li>
+              <li><a href='#gallery'>GALLERY</a></li>
+              <li><a href='#contact'>CONTACT</a></li>
+            </ul>
           </div>
         </div>
       </nav>
     </div>
+
+    <ul class="side-nav" id='mobile-nav'>
+        <li><a href='#home'>HOME</a></li>
+        <li><a href='#search'>SEARCH</a></li>
+        <li><a href='#popular'>POPULAR PLACES</a></li>
+        <li><a href='#gallery'>GALLERY</a></li>
+        <li><a href='#contact'>CONTACT</a></li>
+      </ul>
 
     <!--Import jQuery before materialize.js-->
     <script
@@ -47,6 +60,8 @@
     <script>
       $(document).ready(function() {
         // Custom JS & jQuery here
+        $('.button-collapse').sideNav();
+
       });
     </script>
   </body>
