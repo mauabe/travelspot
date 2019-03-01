@@ -1,5 +1,7 @@
 .slider .btn {
   margin-top: 20px;
+  color: white;
+
 }
 
 .section-search input{
@@ -14,4 +16,16 @@
   position: absolute;
   width: 100%;
   text-align: center;
+}
+
+.section-socialmedia .fa-2x {
+  margin: 5px 10px;
+}
+
+.section-contact h5 {
+  margin-bottom: 30px;
+}
+
+.footer {
+  font-size: 13px;
 }
